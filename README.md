@@ -40,6 +40,8 @@ By default, the skill triggers on time-related queries. To have Claude check the
 
 > Always check the current time at the start of each response using the temporal-awareness skill.
 
+To scope this to a single project, add the same line to the project's instructions instead — project instructions apply per-turn directives more reliably than global preferences.
+
 ## License
 
 [MIT](LICENSE) © 2026 [joshuaonsc](https://github.com/joshuaonsc)
