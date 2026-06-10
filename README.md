@@ -2,7 +2,7 @@
 
 A Claude skill that gives Claude access to the current wall-clock time — a capability it does not natively have.
 
-Claude knows the current date but not the time of day. This skill closes that gap using two methods:
+Claude knows the date the conversation started, but not the time of day — and in a long conversation, not even necessarily today's date. This skill closes both gaps using two methods:
 
 - **Primary: Code Execution** (`bash_tool`) — runs `date` locally in the container. Lower latency, no rate limits, returns epoch seconds for easy elapsed-time arithmetic.
 - **Fallback: MCP time server** — calls a connected time server via MCP. Works when Code Execution is off, at the cost of a network round-trip.
