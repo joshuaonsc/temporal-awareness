@@ -42,5 +42,4 @@ By default, the skill triggers on time-related queries. To have Claude check the
 
 ## License
 
-[MIT](./LICENSE)
 [MIT](LICENSE) © 2026 [joshuaonsc](https://github.com/joshuaonsc)
